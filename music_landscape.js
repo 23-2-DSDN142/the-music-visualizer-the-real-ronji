@@ -5,6 +5,8 @@ function draw_one_frame(words, vocal, drum, bass, other,counter) {
   background(255,236,180); // cream
   fill(244,161,39); // orange
 
+  rect(0,0,width,height)
+
   let stripeWidth = map(other, 40, 100, 40, 80, true);
 
   let numStripes = height / stripeWidth;
@@ -23,6 +25,8 @@ function draw_one_frame(words, vocal, drum, bass, other,counter) {
     let cur_y = height 
     triangle(cur_x, cur_y, mid_x, cur_y - triangleHeight, next_x, cur_y);
   }
+
+  // ellipse(width-counter,height/2,40,40)
 
 
   let drumSize = map(drum, 30, 100, 30, 300, true);
