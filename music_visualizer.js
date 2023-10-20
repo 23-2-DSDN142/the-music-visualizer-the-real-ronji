@@ -156,7 +156,6 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   image(worm[wFrame],width/2,height/2)
   pop()
 
-
 }
 
 function drawFirefly(x,drum,size){
@@ -166,14 +165,4 @@ function drawFirefly(x,drum,size){
   ellipse(x,y,size+10)
   ellipse(x,y,size+20)
   ellipse(x,y,size+30)
-}
-
-
-function drawCloud3(x, y) {
-  noStroke();
-  ellipse(x,y-7,45)
-  ellipse(x-25,y,30)
-  ellipse(x+25,y,30)
-  ellipse(x+20,y+10,70,25)
-  ellipse(x-20,y+10,70,25)
 }
